@@ -182,6 +182,8 @@ nav .links p {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
+  border-radius: 20px;
   background-color: #79ADDC;
   font-family: Gill;
   font-size: 15px;
@@ -189,13 +191,13 @@ nav .links p {
   color: white;
 }
 .promo-tours .israel {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-01.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-01.jpg);
 }
 .promo-tours .usa {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-02.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-02.jpg);
 }
 .promo-tours .australia {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour-03.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-03.jpg);
 }
 
 @media only screen and (max-width: 1060px) {
@@ -392,6 +394,208 @@ nav .links p {
 @media only screen and (max-width: 1060px) {
   .about {
     width: 90%;
+  }
+}
+header {
+  max-width: 980px;
+  margin: 50px auto 0 auto;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tours-header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: Proximal;
+  font-size: 60px;
+}
+
+.tour-row {
+  max-width: 818px;
+  margin: 50px auto 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+}
+.tour-row .tours {
+  height: 304px;
+  width: 236px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+.tour-row .tours .title {
+  font-family: Proximal;
+  font-size: 60px;
+  text-align: center;
+}
+.tour-row .tours .subtitle {
+  font-family: Proximal;
+  font-size: 30px;
+  margin: -25px 0 50px 0;
+}
+.tour-row .tours .button {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #79ADDC;
+  font-family: Gill;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+}
+.tour-row .israel {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-01.jpg);
+}
+.tour-row .usa {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-02.jpg);
+}
+.tour-row .australia {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-03.jpg);
+}
+.tour-row .new-zealand {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-04.jpg);
+}
+.tour-row .france {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-05.jpg);
+}
+.tour-row .egypt {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-06.jpg);
+}
+.tour-row .japan {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-07.jpg);
+}
+.tour-row .canada {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-08.jpg);
+}
+.tour-row .uae {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-09.jpg);
+}
+
+@media only screen and (max-width: 1060px) {
+  .row {
+    flex-direction: column;
+  }
+}
+.packages {
+  max-width: 980px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.packages .header {
+  height: 420px;
+  margin-bottom: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+.packages .header .title {
+  font-family: Proximal;
+  font-size: 80px;
+  left: 20px;
+  top: 5px;
+  position: absolute;
+}
+.packages .header .subtitle {
+  font-family: Proximal;
+  font-size: 30px;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+.packages .israel {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-01.jpg);
+}
+.packages .usa {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-02.jpg);
+}
+.packages .aus {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-03.jpg);
+}
+.packages .nz {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-04.jpg);
+}
+.packages .france {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-05.jpg);
+}
+.packages .egypt {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-06.jpg);
+}
+.packages .japan {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-07.jpg);
+}
+.packages .canada {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-08.jpg);
+}
+.packages .uae {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-09.jpg);
+}
+.packages .images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  flex: wrap;
+}
+.packages .images img {
+  width: 298px;
+  height: 347px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.packages .text-section .title {
+  width: 140px;
+  margin-top: 70px;
+  font-family: Proximal;
+  font-size: 60px;
+  border-bottom: black solid 1px;
+}
+.packages .text-section .desc {
+  margin-top: 40px;
+  font-family: Gill;
+  font-size: 16px;
+}
+.packages .button {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #79ADDC;
+  width: 133px;
+  height: 40px;
+  margin: 80px auto 100px auto;
+  display: flex;
+  justify-content: center;
+  font-family: Gill;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1060px) {
+  .packages {
+    width: 90%;
+  }
+  .packages .images {
+    flex-direction: column;
+    align-items: center;
+  }
+  .packages .images img {
+    margin-bottom: 50px;
   }
 }
 footer {

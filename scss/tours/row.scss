@@ -1,24 +1,17 @@
-.promo-tours {
-    max-width: 1280px;
-    // min-width: 1000px;
-    min-height: 304px;
-    margin: 0 auto;
+.tour-row {
+    @include selfCenter(818px, 50px auto 0 auto);
 
-    display: flex;
+    @include contentCenter(flex, center, space-between);
+
     flex-wrap: wrap;
-    justify-content: space-around;
 
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-bottom: 100px;
 
-    // background-color: blue;
-    
-
-    .promo {
+    .tours {
         height: 304px;
         width: 236px;
-        margin-top: -50px;
-        margin-bottom: 75px;
+        margin-top: 50px;
+        margin-bottom: 50px;
 
         display: flex;
         align-items: center;
@@ -35,6 +28,8 @@
         .title {
             font-family: Proximal;
             font-size: $title;
+
+            text-align: center;
         }
 
         .subtitle {
@@ -48,9 +43,7 @@
             width: 130px;
             height: 40px;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include contentCenter;
 
             @include siteButton;
 
@@ -63,7 +56,6 @@
 
     }
 
-
     .israel {
         background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-01.jpg);
     }
@@ -75,13 +67,36 @@
     .australia {
         background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-03.jpg);
     }
+
+    
+    .new-zealand {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-04.jpg);
+    }
+
+    .france {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-05.jpg);
+    }
+
+    .egypt {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-06.jpg);
+    }
+
+
+    .japan {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-07.jpg);
+    }
+
+    .canada {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-08.jpg);
+    }  
+
+    .uae {
+        background-image: linear-gradient($overlay-black, $overlay-black), url(../images/tour/tour-09.jpg);
+    }
 }
 
 @media only screen and (max-width: 1060px) {
-    .promo-tours {
-        width: 236px;
-        display: block;
-        justify-content: center;
-        padding: 0;
+    .row {
+        flex-direction: column;
     }
 }
