@@ -1,7 +1,10 @@
 .tour-row {
     @include selfCenter(818px, 50px auto 0 auto);
 
-    @include contentCenter(flex, center, space-between);
+    // @include contentCenter(flex, center, space-between);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
     flex-wrap: wrap;
 
@@ -23,6 +26,7 @@
         background-size: cover;
 
         color: $site-white;
+
 
 
         .title {
@@ -95,8 +99,9 @@
     }
 }
 
-@media only screen and (max-width: 1060px) {
-    .row {
+@media only screen and (max-width: 1200px) {
+    .tour-row {
         flex-direction: column;
+        padding: 0 50px 100px 50px;
     }
 }

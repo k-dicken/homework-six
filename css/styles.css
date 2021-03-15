@@ -487,9 +487,10 @@ header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/tour/tour-09.jpg);
 }
 
-@media only screen and (max-width: 1060px) {
-  .row {
+@media only screen and (max-width: 1200px) {
+  .tour-row {
     flex-direction: column;
+    padding: 0 50px 100px 50px;
   }
 }
 .packages {
@@ -516,7 +517,9 @@ header {
 .packages .header .subtitle {
   font-family: Proximal;
   font-size: 30px;
+  text-align: right;
   position: absolute;
+  margin-right: 10px;
   right: 20px;
   bottom: 0;
 }
